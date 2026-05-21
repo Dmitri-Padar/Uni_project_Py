@@ -100,17 +100,19 @@ class SudokuApp:
         
         self.checks_label = tk.Label(
             self.frame,
-            text=f"Checks left: {self.checks_left}",
+            text=f" Checks left: {self.checks_left} ",
+            relief="sunken",
             font=("Arial", 12),
-            bg="BEIGE"
+            bg="beige"
         )
         self.checks_label.grid(row=0, column=5, padx=20)
 
         self.timer_label = tk.Label(
             self.frame,
-            text="Time: 00:00",
+            text=" Time: 00:00 ",
+            relief="sunken",
             font=("Arial", 12),
-            bg="BEIGE"
+            bg="beige"
         )
         self.timer_label.grid(row=0, column=4, padx=20)
 
